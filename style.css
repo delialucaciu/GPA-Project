@@ -1,0 +1,260 @@
+
+.container {
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Header elements: logo, hamburger-menu */
+
+hr{
+	display: none;
+}
+
+.hamburger {
+	display: none;
+	background-color: transparent;
+	border: 0;
+	font-size: 20px;
+	cursor: pointer;	
+}
+	
+.logo {
+	display: flex;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#home {
+	color: hsl(257, 27%, 26%);
+}
+
+#school {
+	color: hsl(180, 66%, 49%);
+}
+
+.header-elements {
+	display: flex;
+	position: sticky;
+	top: 0;
+	padding: 10px 50px 10px 50px;
+	background: white;	
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	justify-content: space-between;	
+}
+
+/* Header elements: 
+'nav' container: left & right menu, links */
+
+.nav {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;	
+}
+
+.right-menu{
+	justify-content: flex-end;
+}
+
+.left-menu, .right-menu {
+	display: flex;
+	list-style-type: none;
+	gap: 20px;
+	align-items: center;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.signup {
+	font-weight: bold;
+	font-size: 15px;
+	height: 50px;
+	padding: 15px;
+	color: white;
+	background-color: hsl(180, 66%, 49%);
+	cursor: pointer;
+	border-radius: 25px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a {
+	color: hsl(0, 0%, 75%);
+}
+
+/* Hero section: title & subtitle */
+
+.hero-section {
+	background-image: url("./images/bg-pattern-top-desktop.svg");
+	display: flex;
+	margin: 0px 50px 100px 50px;
+	background-repeat: no-repeat;
+	background-position: left top;	
+	flex-wrap: wrap;
+}
+
+.hero-text {
+	width: 50%;		
+}
+
+#title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 75px;
+	margin-top: 75px;
+	color: hsl(257, 27%, 26%);
+	font-weight: bold;
+}
+
+#subtitle {
+	font-family: 'Poppins', sans-serif;
+	margin-top: 15px;
+	font-size: 15px;
+	color: hsl(0, 0%, 75%);
+}
+
+/* Illustration working - image */
+
+.hero-image {
+	padding-left: 50px;
+	width: 50%;
+	margin-left: auto;
+}
+
+/* Call to action1 container & button (get-started) */
+
+.call-to-action1 {
+	display: flex;
+	width: 80%;
+	height: 90px;
+	background-color: hsl(257, 27%, 26%);
+	border-radius: 10px;
+	margin: auto;
+	justify-content: center;
+	background-image: url("./images/bg-boost-mobile.svg");
+	background-size: 32%;	
+}
+
+.get-started {
+	padding: 15px 25px 15px 25px;
+	background-color: hsl(180, 66%, 49%);
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	align-self: center;
+	border-radius: 25px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+}
+
+.get-started:hover {
+	background-color: white;
+	color: hsl(180, 66%, 49%);
+	border: 1px solid hsl(180, 66%, 49%);
+}
+
+@media only screen and (max-width: 556px) {
+	
+	.container {
+		width: 100%;
+	}
+	
+	/* Header elements: logo, hamburger-menu */
+	
+	.header-elements {
+		padding: 15px;
+		flex-wrap: wrap;	
+	}
+	
+	.hamburger {
+		background-color: transparent;
+		border: 0;
+		font-size: 20px;
+		cursor: pointer;
+		display: flex;
+	}
+	
+	.logo {
+		font-size: 20px;
+	}
+	
+	hr {
+		display: block;
+		border: 1px solid white;
+	}
+	
+	/* Header elements: 
+	'nav' container: left & right menu, links */
+
+	.nav {
+		display: none;
+		background: hsl(257, 27%, 26%);
+		padding: 25px;
+		margin-top: 25px;
+		border-radius: 20px;	
+	}
+	
+	.nav.show {
+		display: flex;
+	}
+	
+	.nav-ul {
+		flex-direction: column;	
+	}
+	
+	.left-menu, .right-menu {
+		flex-direction: column;
+	}
+	
+	a {
+		font-size: 18px;
+	}
+	
+	/* Hero section: title & subtitle */
+	
+	.hero-section {
+		padding: 30px 15px 100px 15px;
+		margin:auto;
+		background: white;
+		flex-direction: column-reverse;
+	}
+	
+	#title {
+		margin: 25px;
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	#subtitle {
+		text-align: center;
+		font-size: 15px;
+		margin-top: 15px;
+	}
+	
+	.hero-text {
+		width: auto;
+	}
+	
+	/* Illustration working - image */
+	
+	.hero-image {
+		width: 100%;
+		display: block;
+		padding: 0;	
+	}
+	
+	/* Call to action1 container & button (get-started) */
+	
+	.call-to-action1 {
+		background-size: 150%;	
+	}
+}
